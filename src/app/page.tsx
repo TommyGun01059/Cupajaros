@@ -1,71 +1,62 @@
 "use client";
 
-import { Link } from "@nextui-org/link";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { Divider } from "@nextui-org/divider";
 import { Button } from "@nextui-org/button";
+import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
+import { ArrowLeft, ArrowRight, Heart } from "lucide-react";
+import { Image } from "@nextui-org/image";
 import { useState } from "react";
 
-import { subtitle, title } from "@/components/primitives";
+import games from "@/gamesFiltered2.json";
 
-export default function Home() {
-  const [clickCount, setClickCount] = useState(0);
+const gamesArray = Object.values(games);
+
+export function GameCard({ games }: { games: any }) {
+  const [index, setIndex] = useState(0);
+  const [game, setGame] = useState(games[index]);
 
   return (
-    <section className="place-self-center flex flex-col items-center justify-center gap-4 py-8 md:py-10 max-w-4xl">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <h1 className={title()}>Encuentra el</h1>
-        <br />
-        <h1 className={title({ color: "primary" })}>repositorio perfecto</h1>
-        <br />
-        <h1 className={title()}>para tus proyectos</h1>
-        <h2 className={subtitle({ class: "mt-4" })}>
-          Repommender te garantiza encontrar
-        </h2>
-        <h2 className={subtitle({ class: "-mt-3" })}>
-          los repositorios más populares de GitHub
-        </h2>
-      </div>
+    <Card className="w-full h-full max-w-2xl">
+      <CardHeader className="w-full flex items-center justify-center text-center text-3xl font-thin tracking-tight">
+        Selecciona {game.name}
+      </CardHeader>
+      <CardBody className="w-full flex items-center justify-center">
+        <Image className="w-full" src={game.header_image} />
+      </CardBody>
+      <CardFooter className="w-full flex gap-2 items-center justify-between">
+        <Button
+          fullWidth
+          onPress={() => {
+            const i = index - 1;
 
-      <div className="flex gap-3">
-        <Link
-          className={buttonStyles({
-            className: "font-bold text-background",
-            color: "primary",
-            radius: "full",
-            variant: "shadow",
-          })}
-          onClick={(e) => {
-            e.preventDefault();
-            document.querySelector("#popular-repos")?.scrollIntoView({
-              behavior: "smooth",
-              block: "nearest",
-              inline: "nearest",
-            });
+            setIndex(i < 0 ? games.length - 1 : i);
+            setGame(games[i]);
           }}
         >
-          Explorar repositorios populares
-        </Link>
-      </div>
+          <ArrowLeft />
+        </Button>
+        <Button isIconOnly>
+          <Heart />
+        </Button>
+        <Button
+          fullWidth
+          onPress={() => {
+            const i = index + 1;
 
-      <div id="popular-repos">
-        <div className="flex flex-col items-center gap-4 mt-32">
-          <h2
-            className={title({
-              color: "primary",
-              className: "text-center",
-            })}
-          >
-            Repositorios populares
-          </h2>
+            setIndex(i % games.length);
+            setGame(games[i]);
+          }}
+        >
+          <ArrowRight />
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+}
 
-          <Divider />
-
-          <Button variant="ghost" onPress={() => setClickCount(clickCount + 1)}>
-            Mostrar más
-          </Button>
-        </div>
-      </div>
+export default function Home() {
+  return (
+    <section className="w-full h-full place-self-center flex flex-col items-center justify-center gap-4 py-8 md:py-10 max-w-4xl">
+      <GameCard games={gamesArray} />
     </section>
   );
 }
