@@ -13,10 +13,12 @@ import {
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import NextLink from "next/link";
-import { Settings } from "lucide-react";
+import { Computer, Gamepad, Gamepad2, Settings, Tablet } from "lucide-react";
+import { Button } from "@nextui-org/button";
+
+import { ThemeSelector } from "./theme-selector";
 
 import { Logo } from "@/components/icons/logos";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
@@ -55,22 +57,31 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link aria-label="Github" href="/settings">
+          <Button isIconOnly as={Link} href="/settings">
             <Settings className="stroke-foreground" />
-          </Link>
-          <ThemeSwitch />
+          </Button>
+          <ThemeSelector icon={<Gamepad />} themeName="company1" />
+          <ThemeSelector icon={<Gamepad2 />} themeName="company2" />
+          <ThemeSelector icon={<Tablet />} themeName="company3" />
+          <ThemeSelector icon={<Computer />} themeName="company4" />
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link aria-label="Github" href="/settings">
-          <Settings className="stroke-foreground" />
-        </Link>
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
+        <div className="flex items-center justify-evenly">
+          <Button isIconOnly as={Link} href="/settings">
+            <Settings className="stroke-foreground" />
+          </Button>
+          <ThemeSelector icon={<Gamepad />} themeName="company1" />
+          <ThemeSelector icon={<Gamepad2 />} themeName="company2" />
+          <ThemeSelector icon={<Tablet />} themeName="company3" />
+          <ThemeSelector icon={<Computer />} themeName="company4" />
+        </div>
+
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
