@@ -18,15 +18,15 @@ export function GameCard({ games }: { games: any }) {
   const [liked, setLiked] = useState(false);
 
   return (
-    <Card className="w-full h-full max-w-2xl">
+    <Card className="w-fit h-fit max-w-2xl">
       <CardHeader className="py-0 pt-2 w-full flex items-center justify-center text-center text-3xl font-light">
         {game.name}
       </CardHeader>
-      <CardBody className="w-full h-full flex items-center justify-center">
+      <CardBody className="w-full h-fit flex items-center justify-center">
         <Image
-          className="w-full h-full"
+          className="w-full h-fit"
           classNames={{
-            wrapper: "w-full h-full rounded-0",
+            wrapper: "w-full h-fit rounded-0",
           }}
           src={game.header_image}
         />
@@ -83,7 +83,7 @@ export function GameCard({ games }: { games: any }) {
 
 export default function Home() {
   return (
-    <section className="w-full h-full place-self-center flex flex-col items-center justify-center gap-4 py-8 md:py-10 max-w-4xl">
+    <section className="w-full h-full place-self-center flex flex-col items-center justify-center gap-4 max-w-4xl">
       <GameCard games={gamesArray} />
     </section>
   );
