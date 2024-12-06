@@ -2,7 +2,7 @@
 
 import { Button } from "@nextui-org/button";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-import { ArrowLeft, ArrowRight, Heart } from "lucide-react";
+import { X, Check, ShoppingBasket, InfoIcon } from "lucide-react";
 import { Image } from "@nextui-org/image";
 import { useState } from "react";
 import clsx from "clsx";
@@ -15,7 +15,8 @@ const gamesArray = Object.values(games);
 export function GameCard({ games }: { games: any }) {
   const [index, setIndex] = useState(0);
   const [game, setGame] = useState(games[index]);
-  const [liked, setLiked] = useState(false);
+  const [bought, setBuy] = useState(false);
+  const [info, setInfo] = useState(false);
 
   return (
     <Card className="w-fit h-fit max-w-2xl">
@@ -39,12 +40,12 @@ export function GameCard({ games }: { games: any }) {
 
             setIndex(i < 0 ? games.length - 1 : i);
             setGame(games[i]);
-            setLiked(false);
+            setBuy(false);
           }}
         >
-          <ArrowLeft />
+          <X />
         </Button>
-        <Button isIconOnly onPress={() => setLiked(!liked)}>
+        <Button isIconOnly onPress={() => setBuy(!bought)}>
           <motion.div
             className="w-full h-full flex items-center justify-center"
             whileHover={{
@@ -55,11 +56,29 @@ export function GameCard({ games }: { games: any }) {
               y: 2.5,
             }}
           >
-            <Heart
+            <ShoppingBasket
               className={clsx(
-                liked
-                  ? "fill-rose-400 stroke-rose-400"
+                bought
+                  ? "fill-cyan-400 stroke-cyan-400"
                   : "fill-none stroke-foreground"
+              )}
+            />
+          </motion.div>
+        </Button>
+        <Button isIconOnly onPress={() => setInfo(!info)}>
+          <motion.div
+            className="w-full h-full flex items-center justify-center right-0"
+            whileHover={{
+              scale: 1.1,
+            }}
+            whileTap={{
+              scale: 1.5,
+              y: 2.5,
+            }}
+          >
+            <InfoIcon
+              className={clsx(
+                info ? "fill-cyan-400" : "fill-none stroke-foreground"
               )}
             />
           </motion.div>
@@ -74,7 +93,7 @@ export function GameCard({ games }: { games: any }) {
             setLiked(false);
           }}
         >
-          <ArrowRight />
+          <Check />
         </Button>
       </CardFooter>
     </Card>
