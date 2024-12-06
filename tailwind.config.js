@@ -192,6 +192,182 @@ module.exports = {
             },
           },
         },
+        steam: {
+          colors: {
+            background: {
+              100: "#121212", // Dark background
+              200: "#1B1B1B",
+              300: "#2A2A2A",
+              400: "#373737",
+              500: "#414141",
+              600: "#525252",
+              700: "#737373",
+              800: "#8F8F8F",
+              900: "#B0B0B0",
+              DEFAULT: "#1B1B1B",
+            },
+            foreground: {
+              100: "#C8D6E5", // Cool gray for text
+              200: "#A4B2CC",
+              300: "#8190B4",
+              400: "#5E709D",
+              500: "#3A5186",
+              600: "#2B3E6B",
+              700: "#1E2E51",
+              800: "#131F3A",
+              900: "#0A1326",
+              DEFAULT: "#C8D6E5",
+            },
+            primary: {
+              100: "#00BFFF", // Steam's signature blue
+              200: "#00A5E0",
+              300: "#008EC2",
+              400: "#0074A4",
+              500: "#005D86",
+              600: "#00476B",
+              700: "#003451",
+              800: "#002239",
+              900: "#001225",
+              DEFAULT: "#00BFFF",
+            },
+            divider: "#222222", // Dark gray dividers
+          },
+        },
+        epic: {
+          colors: {
+            background: {
+              100: "#F8F8F8", // White for light areas
+              200: "#E6E6E6",
+              300: "#D4D4D4",
+              400: "#C2C2C2",
+              500: "#B0B0B0",
+              600: "#8F8F8F",
+              700: "#6E6E6E",
+              800: "#4D4D4D",
+              900: "#2E2E2E",
+              DEFAULT: "#000000", // Black primary background
+            },
+            foreground: {
+              100: "#FFFFFF", // Clean white text
+              200: "#F5F5F5",
+              300: "#EDEDED",
+              400: "#E3E3E3",
+              500: "#CCCCCC",
+              600: "#A6A6A6",
+              700: "#808080",
+              800: "#5A5A5A",
+              900: "#343434",
+              DEFAULT: "#FFFFFF",
+            },
+            primary: {
+              100: "#FFFFFF", // Neutral tone for clean design
+              200: "#F2F2F2",
+              300: "#E6E6E6",
+              400: "#CCCCCC",
+              500: "#A6A6A6",
+              600: "#808080",
+              700: "#5A5A5A",
+              800: "#343434",
+              900: "#000000",
+              DEFAULT: "#FFFFFF",
+            },
+            divider: "#EEEEEE", // Light gray dividers
+          },
+        },
+        g2a: {
+          colors: {
+            background: {
+              100: "#0A0A0A", // Very dark tones
+              200: "#1A1A1A",
+              300: "#2A2A2A",
+              400: "#3A3A3A",
+              500: "#4A4A4A",
+              600: "#6A6A6A",
+              700: "#8A8A8A",
+              800: "#AAAAAA",
+              900: "#CACACA",
+              DEFAULT: "#0A0A0A",
+            },
+            foreground: {
+              100: "#F5F5F5", // Light foregrounds
+              200: "#E6E6E6",
+              300: "#D6D6D6",
+              400: "#C7C7C7",
+              500: "#B7B7B7",
+              600: "#979797",
+              700: "#767676",
+              800: "#565656",
+              900: "#363636",
+              DEFAULT: "#F5F5F5",
+            },
+            primary: {
+              100: "#FFA800", // G2A's iconic orange
+              200: "#FF8C00",
+              300: "#FF7000",
+              400: "#FF5500",
+              500: "#FF3900",
+              600: "#CC2E00",
+              700: "#992300",
+              800: "#661800",
+              900: "#330C00",
+              DEFAULT: "#FFA800",
+            },
+            secondary: {
+              100: "#00AEEF", // G2A's complementary blue
+              200: "#0090D8",
+              300: "#0078B8",
+              400: "#006098",
+              500: "#004878",
+              600: "#003A60",
+              700: "#002C48",
+              800: "#001E30",
+              900: "#000F18",
+              DEFAULT: "#00AEEF",
+            },
+            divider: "#444444", // Dark gray dividers
+          },
+        },
+        eneba: {
+          colors: {
+            background: {
+              100: "#1C0F29", // Dark purple shades
+              200: "#291A3C",
+              300: "#36264F",
+              400: "#443462",
+              500: "#523275",
+              600: "#634F8A",
+              700: "#7460A0",
+              800: "#8A7AB3",
+              900: "#A090C7",
+              DEFAULT: "#1C0F29",
+            },
+            foreground: {
+              100: "#FDF5DC", // Light yellow
+              200: "#FBE6B4",
+              300: "#F8D68C",
+              400: "#F6C766",
+              500: "#F3B83E",
+              600: "#D29931",
+              700: "#B17C24",
+              800: "#8F5F17",
+              900: "#6E430A",
+              DEFAULT: "#F3B83E",
+            },
+            primary: {
+              100: "#835CFF", // Eneba's vibrant purple
+              200: "#6B46F0",
+              300: "#5230C9",
+              400: "#3922A3",
+              500: "#28187C",
+              600: "#1C1266",
+              700: "#130D4F",
+              800: "#0B0839",
+              900: "#040423",
+              DEFAULT: "#835CFF",
+            },
+            divider: "#2E2041", // Muted purple dividers
+          },
+        },
       },
     }),
   ],
