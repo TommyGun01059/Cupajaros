@@ -19,3 +19,9 @@ export type SvgWrapperProps = IconSvgProps & {
   fill?: string;
   viewBox: string;
 };
+
+export type Game = {
+  name: string;
+  header_image: string;
+  infoPage?: string;
+};

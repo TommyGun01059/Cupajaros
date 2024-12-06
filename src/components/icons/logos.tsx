@@ -123,10 +123,14 @@ export const G2aLogo: React.FC<IconSvgProps> = (props: IconSvgProps) => (
 );
 
 export const EpicLogo: React.FC<IconSvgProps> = (props: IconSvgProps) => (
-  <SvgWrapper viewBox="0 0 32 32" {...props}>
-    <style type="text/css">{`
-  .st0{fill:#FFFFFF;}
-`}</style>
+  <SvgWrapper
+    className="fill-black stroke-white stroke-[1]"
+    viewBox="0 0 32 32"
+    {...props}
+  >
+    {/* <style type="text/css">{`
+        .st0{fill:#FFFFFF;}
+    `}</style> */}
 
     <path d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z" />
 

@@ -15,15 +15,12 @@ import clsx from "clsx";
 import NextLink from "next/link";
 import { Settings } from "lucide-react";
 import { Button } from "@nextui-org/button";
+import { Image } from "@nextui-org/image";
 
 import { ThemeSelector } from "./theme-selector";
 
 import { Logo } from "@/components/icons/logos";
-import { SteamLogo } from "@/components/icons/logos";
 import { siteConfig } from "@/config/site";
-import { G2aLogo } from "@/components/icons/logos";
-import { EpicLogo } from "@/components/icons/logos";
-import { EnebaLogo } from "@/components/icons/logos";
 
 export const Navbar = () => {
   return (
@@ -62,10 +59,22 @@ export const Navbar = () => {
           <Button isIconOnly as={Link} href="/settings">
             <Settings className="stroke-foreground" />
           </Button>
-          <ThemeSelector icon={<SteamLogo />} themeName="company1" />
-          <ThemeSelector icon={<EpicLogo />} themeName="company2" />
-          <ThemeSelector icon={<G2aLogo />} themeName="company3" />
-          <ThemeSelector icon={<EnebaLogo />} themeName="company4" />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/steam.png" />}
+            themeName="steam"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/epic.png" />}
+            themeName="epic"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/g2a.png" />}
+            themeName="g2a"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/eneba.png" />}
+            themeName="eneba"
+          />
         </NavbarItem>
       </NavbarContent>
 
@@ -78,10 +87,22 @@ export const Navbar = () => {
           <Button isIconOnly as={Link} href="/settings">
             <Settings className="stroke-foreground" />
           </Button>
-          <ThemeSelector icon={<SteamLogo />} themeName="company1" />
-          <ThemeSelector icon={<EpicLogo />} themeName="company2" />
-          <ThemeSelector icon={<G2aLogo />} themeName="company3" />
-          <ThemeSelector icon={<EnebaLogo />} themeName="company4" />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/steam.png" />}
+            themeName="steam"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/epic.png" />}
+            themeName="epic"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/g2a.png" />}
+            themeName="g2a"
+          />
+          <ThemeSelector
+            icon={<Image className="p-2" src="/logos/eneba.png" />}
+            themeName="eneba"
+          />
         </div>
 
         <div className="mx-4 mt-2 flex flex-col gap-2">
