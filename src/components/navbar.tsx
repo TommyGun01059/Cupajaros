@@ -30,7 +30,7 @@ export const Navbar = () => {
           <NextLink className="flex justify-start items-center gap-2" href="/">
             <Logo size={32} />
             {/* TODO: Add name and custom logo */}
-            <p className="font-bold text-inherit">GameGenie</p>
+            <p className="font-bold text-secondary">GameGenie</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -38,10 +38,10 @@ export const Navbar = () => {
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
-                  linkStyles({ color: "foreground" }),
+                  linkStyles({ color: "primary" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
-                color="foreground"
+                color="#foreground"
                 href={item.href}
               >
                 {item.label}

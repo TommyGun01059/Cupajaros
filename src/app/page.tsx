@@ -1,7 +1,7 @@
 "use client";
 
 import { GameCard } from "@/components/game-card";
-import games from "@/gamesFiltered2.json";
+import games from "@/gamesFiltered3.json";
 import { Game } from "@/types";
 
 const gamesArray = Object.values(games) as Game[];

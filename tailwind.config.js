@@ -207,16 +207,16 @@ module.exports = {
               DEFAULT: "#1B1B1B",
             },
             foreground: {
-              100: "#C8D6E5", // Cool gray for text
-              200: "#A4B2CC",
-              300: "#8190B4",
-              400: "#5E709D",
-              500: "#3A5186",
-              600: "#2B3E6B",
-              700: "#1E2E51",
-              800: "#131F3A",
-              900: "#0A1326",
-              DEFAULT: "#C8D6E5",
+              100: "#000000", // Black for text
+              200: "#000000",
+              300: "#000000",
+              400: "#000000",
+              500: "#000000",
+              600: "#000000",
+              700: "#000000",
+              800: "#000000",
+              900: "#000000",
+              DEFAULT: "#000000",
             },
             primary: {
               100: "#00BFFF", // Steam's signature blue
@@ -229,6 +229,18 @@ module.exports = {
               800: "#002239",
               900: "#001225",
               DEFAULT: "#00BFFF",
+            },
+            secondary: {
+              100: "#00AEEF", // G2A's complementary blue
+              200: "#0090D8",
+              300: "#0078B8",
+              400: "#006098",
+              500: "#004878",
+              600: "#003A60",
+              700: "#002C48",
+              800: "#001E30",
+              900: "#000F18",
+              DEFAULT: "#ffffff",
             },
             divider: "#222222", // Dark gray dividers
           },
@@ -248,16 +260,16 @@ module.exports = {
               DEFAULT: "#000000", // Black primary background
             },
             foreground: {
-              100: "#FFFFFF", // Clean white text
-              200: "#F5F5F5",
-              300: "#EDEDED",
-              400: "#E3E3E3",
-              500: "#CCCCCC",
-              600: "#A6A6A6",
-              700: "#808080",
-              800: "#5A5A5A",
-              900: "#343434",
-              DEFAULT: "#FFFFFF",
+              100: "#000000", // Clean white text
+              200: "#000000",
+              300: "#000000",
+              400: "#000000",
+              500: "#000000",
+              600: "#000000",
+              700: "#000000",
+              800: "#000000",
+              900: "#000000",
+              DEFAULT: "#000000",
             },
             primary: {
               100: "#FFFFFF", // Neutral tone for clean design
@@ -271,34 +283,46 @@ module.exports = {
               900: "#000000",
               DEFAULT: "#FFFFFF",
             },
+            secondary: {
+              100: "#00AEEF", // G2A's complementary blue
+              200: "#0090D8",
+              300: "#0078B8",
+              400: "#006098",
+              500: "#004878",
+              600: "#003A60",
+              700: "#002C48",
+              800: "#001E30",
+              900: "#000F18",
+              DEFAULT: "#0090d8",
+            },
             divider: "#EEEEEE", // Light gray dividers
           },
         },
         g2a: {
           colors: {
             background: {
-              100: "#0A0A0A", // Very dark tones
-              200: "#1A1A1A",
-              300: "#2A2A2A",
-              400: "#3A3A3A",
-              500: "#4A4A4A",
-              600: "#6A6A6A",
-              700: "#8A8A8A",
-              800: "#AAAAAA",
-              900: "#CACACA",
-              DEFAULT: "#0A0A0A",
+              100: "#001731", // Very dark tones
+              200: "#002e62",
+              300: "#004493",
+              400: "#006FEE",
+              500: "#338ef7",
+              600: "#66aaf9",
+              700: "#99c7fb",
+              800: "#cce3fd",
+              900: "#e6f1fe",
+              DEFAULT: "#004493",
             },
             foreground: {
-              100: "#F5F5F5", // Light foregrounds
-              200: "#E6E6E6",
-              300: "#D6D6D6",
-              400: "#C7C7C7",
-              500: "#B7B7B7",
-              600: "#979797",
-              700: "#767676",
-              800: "#565656",
-              900: "#363636",
-              DEFAULT: "#F5F5F5",
+              100: "#FFA800", // G2A's iconic orange
+              200: "#FF8C00",
+              300: "#FF7000",
+              400: "#FF5500",
+              500: "#FF3900",
+              600: "#CC2E00",
+              700: "#992300",
+              800: "#661800",
+              900: "#330C00",
+              DEFAULT: "#FFA800",
             },
             primary: {
               100: "#FFA800", // G2A's iconic orange
@@ -364,6 +388,18 @@ module.exports = {
               800: "#0B0839",
               900: "#040423",
               DEFAULT: "#835CFF",
+            },
+            secondary: {
+              100: "#00AEEF", // G2A's complementary blue
+              200: "#0090D8",
+              300: "#0078B8",
+              400: "#006098",
+              500: "#004878",
+              600: "#003A60",
+              700: "#002C48",
+              800: "#001E30",
+              900: "#000F18",
+              DEFAULT: "#F3B83E",
             },
             divider: "#2E2041", // Muted purple dividers
           },

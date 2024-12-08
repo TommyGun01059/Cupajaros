@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Galactic Bowling",
+    "price": 19.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/20200/header.jpg?t=1640121033",
+    "infoPage": "https://store.steampowered.com/app/20200"
+  },
+  {
+    "name": "Train Bandit",
+    "price": 0.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/655370/header.jpg?t=1617500526"
+  },
+  {
+    "name": "Jolt Project",
+    "price": 4.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1732930/header.jpg?t=1637149386"
+  },
+  {
+    "name": "Henosis\u2122",
+    "price": 5.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1355720/header.jpg?t=1639875115"
+  }
+]
