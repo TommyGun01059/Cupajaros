@@ -1,23 +1,86 @@
 [
   {
-    "name": "Galactic Bowling",
+    "name": "Grand Theft Auto V",
+    "price": 29.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/271590"
+  },
+  {
+    "name": "Call of Duty\u00ae 4: Modern Warfare\u00ae",
     "price": 19.99,
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/20200/header.jpg?t=1640121033",
-    "infoPage": "https://store.steampowered.com/app/20200"
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/7940/header.jpg?t=1639476247",
+    "infoPage": "https://store.steampowered.com/app/7940"
+},
+  {
+    "name": "Counter Strike: Global Offensive",
+    "price": 0,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427",
+    "infoPage": "https://store.steampowered.com/app/730"
   },
   {
-    "name": "Train Bandit",
-    "price": 0.99,
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/655370/header.jpg?t=1617500526"
+    "name": "Portal 2",
+    "price": 9.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg?t=1640121033",
+    "infoPage": "https://store.steampowered.com/app/620"
   },
   {
-    "name": "Jolt Project",
+    "name": "Terraria",
+    "price": 9.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/105600"
+  },
+  {
+    "name": "PhasmoPhobia",
+    "price": 13.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/739630/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/739630"
+  },
+  {
+    "name": "Bloons TD 6",
+    "price": 9.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/960090/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/960090"
+  },
+  {
+    "name": "The Elder Scrolls V: Skyrim",
+    "price": 19.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/72850/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/72850"
+  },
+  {
+    "name": "The Witcher 3: Wild Hunt",
+    "price": 39.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/292030"
+  },
+  {
+    "name": "Among Us",
     "price": 4.99,
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1732930/header.jpg?t=1637149386"
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/945360/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/945360"
   },
   {
-    "name": "Henosis\u2122",
-    "price": 5.99,
-    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1355720/header.jpg?t=1639875115"
+    "name": "The Forest",
+    "price": 19.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/242760/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/242760"
+  },
+  {
+    "name": "Raft",
+    "price": 19.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/648800/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/648800"
+  },
+  {
+    "name": "Rust",
+    "price": 39.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/252490"
+  },
+  {
+    "name": "Dead by Daylight",
+    "price": 19.99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/381210/header.jpg?t=1646762118",
+    "infoPage": "https://store.steampowered.com/app/381210"
   }
 ]
